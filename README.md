@@ -18,7 +18,7 @@ This repository provides the [guennobzh/dropbox](https://registry.hub.docker.com
 
     docker run -d --restart=always --name=dropbox \
     -v /path/to/localfolder:/dbox/Dropbox \
-    janeczku/dropbox
+    guennobzh/dropbox
 
 ### Run dropbox with custom user/group id
 This fixes file permission errrors that might occur when mounting the Dropbox file folder (`/dbox/Dropbox`) from the host or a Docker container volume. You need to set `DBOX_UID`/`DBOX_GID` to the user id and group id of whoever owns these files on the host or in the other container.
@@ -26,13 +26,13 @@ This fixes file permission errrors that might occur when mounting the Dropbox fi
     docker run -d --restart=always --name=dropbox \
     -e DBOX_UID=110 \
     -e DBOX_GID=200 \
-    janeczku/dropbox
+    guennobzh/dropbox
 
 ### Enable LAN Sync
 
     docker run -d --restart=always --name=dropbox \
     --net="host" \
-    janeczku/dropbox
+    guennobzh/dropbox
 
 ## Linking to Dropbox account after first start
 
