@@ -12,7 +12,7 @@ This repository provides the [guennobzh/dropbox](https://registry.hub.docker.com
 
 ### Quickstart
 
-    docker run -d --restart=always --name=dropbox janeczku/dropbox
+    docker run -d --restart=always --name=dropbox guennobzh/dropbox
 
 ### Dropbox data mounted to local folder on the host
 
